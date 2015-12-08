@@ -67,10 +67,10 @@ t_file		*sort_list(t_file *lst, int (*cmp)(int, int))
 				tmp->next->data = tmp2;
 				stop = 0;
 			}
-			print_file(tmp);
-			ft_putchar('\n');
 			tmp = tmp->next;
 		}
+		print_file(lst);
+		ft_putchar('\n');
 	}
 	return (lst);
 }
